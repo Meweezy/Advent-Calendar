@@ -45,6 +45,12 @@ body {
   font-size: 8rem;
 }
 
+.day1 .front, .day3 .front, .day5 .front, .day7 .front, .day9 .front,
+.day11 .front, .day13 .front, .day15 .front, .day17 .front, .day19 .front,
+.day21 .front, .day23 .front, .day25 .front {
+  background-color: #00661F;
+}
+
 
 .container-item {
   display: flex;
