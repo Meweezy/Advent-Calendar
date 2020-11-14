@@ -1,39 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap');
-
-*{
+* {
   box-sizing: border-box;
 }
 
+/* Muizz */
 body {
- background-image: url(/assets/images/christmas_bg.jpg);
- background-repeat: none;
- background-size: cover;
+  background-image: url(/assets/images/christmas_bg.jpg);
+  background-repeat: none;
+  background-size: cover;
   padding: 3vh;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
   margin: auto;
 }
 
-.container-wrapper{
+.container-wrapper {
   max-width: 768px;
 }
 
 .container {
-  
   display: grid;
-  /* grid-template-columns: repeat(8, minmax(100px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  /* grid-template-rows: repeat(6, 150px); */
   grid-gap: 15px;
   grid-auto-flow: dense;
   grid-auto-rows: 100px;
   grid-auto-columns: 100px;
   height: 90vh;
-
 }
 
 .container-item {
@@ -42,13 +38,13 @@ body {
   align-items: center;
   /* border: 1px solid black; */
   background-color: #ccc;
-
 }
+/* Muizz */
 
+/* Tatyana */
 .title {
   grid-row: span 2;
   grid-column: span 3;
-
 
   background-color: #fff;
   /* color: #C11F1F; */
@@ -56,12 +52,19 @@ body {
   font-size: 5rem;
 }
 
-.day1, .day14, .day15, .day10, .day23 {
+.day1,
+.day14,
+.day15,
+.day10,
+.day23 {
   grid-row: span 2;
   font-size: 4rem;
 }
 
-.day4, .day9, .day18, .day22 {
+.day4,
+.day9,
+.day18,
+.day22 {
   grid-column: span 2;
   font-size: 3rem;
 }
@@ -70,7 +73,6 @@ body {
   grid-row: span 2;
   grid-column: span 2;
   font-size: 5rem;
-
 }
 
 .day1,
@@ -90,7 +92,6 @@ body {
 .day24 {
   grid-row: span 2;
   grid-column: span 2;
-
 }
 
 .day25 {
@@ -100,12 +101,21 @@ body {
   font-size: 8rem;
 }
 
-.day1 .front, .day3 .front, .day5 .front, .day7 .front, .day9 .front,
-.day11 .front, .day13 .front, .day15 .front, .day17 .front, .day19 .front,
-.day21 .front, .day23 .front, .day25 .front {
-  background-color: #00661F;
+.day1 .front,
+.day3 .front,
+.day5 .front,
+.day7 .front,
+.day9 .front,
+.day11 .front,
+.day13 .front,
+.day15 .front,
+.day17 .front,
+.day19 .front,
+.day21 .front,
+.day23 .front,
+.day25 .front {
+  background-color: #00661f;
 }
-
 
 .container-item {
   display: flex;
@@ -132,7 +142,8 @@ body {
 }
 
 /* Position the front and back side */
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -146,10 +157,9 @@ body {
 
 /* Style the front side (fallback if image is missing) */
 .front {
-  background-color: #C11F1F;
+  background-color: #c11f1f;
   color: white;
   border-radius: 10px;
-
 }
 
 /* Style the back side */
@@ -157,6 +167,4 @@ body {
   border-radius: 10px;
   transform: rotateX(180deg);
 }
-
-}
-
+/* Tatyana */
